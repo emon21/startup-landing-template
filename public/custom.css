@@ -1,0 +1,24 @@
+/* .btn {
+    background: #008AFF;
+    border-radius: 3px;
+    padding: 18px 30px 15px;
+} */
+
+
+/* gray:{
+        50: "#8492A7", //secondary text color
+        900: "#222D39", //text color
+        primary: "#008AFF",
+        "bg-color":"#F0F9FE",
+    } */
+
+/* section {
+padding: 140px 0 140px 0px;
+} */
+
+root::{
+    var btn-bg{
+       background-color:  #008AFF;
+    }
+}
+

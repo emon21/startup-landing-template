@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components{
+
+    .btnprimary{
+        @apply flex items-center justify-center gap-3 px-5 py-2 rounded bg-btnprimary text-white 
+    }
+}
+
+
+
+
