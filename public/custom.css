@@ -16,9 +16,51 @@
 padding: 140px 0 140px 0px;
 } */
 
-root::{
+/* root::{
     var btn-bg{
        background-color:  #008AFF;
     }
+} */
+
+.section-title{
+    padding: 140px 0 140px 0;
 }
+
+.text-primary{
+  color: #008AFF;
+}
+.demo{
+    position: relative;
+}
+
+.demo:not(:last-child)::after{
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 50px;
+    top:50% ;
+    right: 0;
+    transform: translateY(-50%);
+    background-color: #DEE7EE;
+}
+
+.formInput{
+width: 563px;
+height: 71px;
+background: #FFFFFF;
+box-shadow: 0px 15px 35px rgba(210, 217, 224, 0.25);
+border-radius: 5px;
+}
+
+.calltoaction{
+  
+
+    background-image: url("img/Bg.jpg");
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    /* background-attachment: fixed; */
+    /* background-size: cover; */
+ /* background-color: #cccccc; */
+}
+
 

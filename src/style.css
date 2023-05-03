@@ -2,14 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .primary {
+    @apply flex items-center justify-center gap-3 px-5 py-2 rounded bg-primary text-white;
+  }
+  .imghover{
+    @apply  transition ease-linear duration-300 cursor-pointer
+  }
 
-@layer components{
-
-    .btnprimary{
-        @apply flex items-center justify-center gap-3 px-5 py-2 rounded bg-btnprimary text-white 
-    }
 }
-
-
-
-
