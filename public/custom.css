@@ -64,3 +64,180 @@ border-radius: 5px;
 }
 
 
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+  .portfolio{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /* .portfolio-grid{
+    margin-right: 30px;
+  }
+  .portfolio-grid:last-child{
+    margin-right: 0;
+  } */
+
+
+.portfolio-filter button:hover,
+.portfolio-filter button.active{
+color: #008AFF;
+}
+
+
+
+.faq:after {
+    content: '+';
+    position: absolute;
+    right: 1em;
+    color: #141414;
+  }
+  
+  input:checked + .faq:after {
+    content: '-';
+    line-height: .8em;
+  }
+  
+  .accordion__content{
+    max-height: 0em;
+    /* transition: all 0.4s cubic-bezier(0.865, 0.14, 0.095, 0.87); */
+    transition: all 0.5s ease-in-out;
+  }
+  input[name='panel']:checked ~ .accordion__content {
+    /* Get this as close to what height you expect */
+    max-height: 50em;
+  }
+
+
+  @keyframes progress {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+  
+  .animate-progress {
+    animation-name: progress;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+  }
+
+
+  .progress-percentage {
+    animation: show-percentage 5s ease-out forwards;
+  }
+  
+  @keyframes show-percentage {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+
+
+  .count {
+    animation: count-up 1s ease-out forwards;
+  }
+  
+  @keyframes count-up {
+    from {
+      transform: scale(0);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+  .count {
+    animation: count-up 1s ease-out forwards;
+  }
+  
+  .plus {
+    animation: show-plus 0.5s 1s ease-out forwards;
+  }
+  
+  @keyframes count-up {
+    from {
+      transform: scale(0);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes show-plus {
+    from {
+      transform: scale(0);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .swiper-slide-active{
+    background-color: #008AFF;
+    /* color: #141414;
+    padding: 40px 0 40px 0; */
+  }
+
+/* 
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+} */
+
+/* 
+.arraw svg path{
+    color: red;
+} */

@@ -16,18 +16,19 @@
 
     <link href="./public/output.css" rel="stylesheet">
     <!-- <script src="https://cdn.tailwindcss.com"></script> -->
-
+<!-- CSS -->
+<!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" /> -->
+<link rel="stylesheet" href="./public/swiper-bundle.min.css">
     <!-- custom css -->
     <link href="./public/custom.css" rel="stylesheet">
     <!-- custom css -->
-
 </head>
 
-<body class="bg-white font-custom">
-    <div class="bg-[#F0F9FE]">
-        <header class="flex items-center justify-center sticky top-0 z-50 ">
+<body class="font-custom">
+    <div class="bg-[#F0F9FE] ">
+        <header class="flex items-center justify-center  top-0  sticky  w-full z-50 ">
             <div class="container">
-                <div class="flex justify-between items-center py-4 h-[55px] mt-10  mb-[85px]">
+                <div class="flex justify-between items-center py-4">
                     <a href="#">
                         <img src="public/img/Logo.png" alt="">
                     </a>
@@ -35,21 +36,23 @@
                     <ul class="flex gap-12">
                         <li class="">
                             <a href="#"
-                                class="hover:text-primary transition duration-300 ease-in-out  font-custom font-medium text-[18px] leading-[22px] text-center text-gray-900">Home</a>
+                                class="hover:text-primary transition duration-300 ease-in-out  font-custom font-medium text-[18px] leading-[22px] text-center text-secondary">Home</a>
                         </li>
                         <li class=""><a href="#"
-                                class="hover:text-primary transition duration-300 ease-in-out  font-custom font-medium text-[18px] leading-[22px] text-center text-gray-900">About</a>
+                                class="hover:text-primary transition duration-300 ease-in-out  font-custom font-medium text-[18px] leading-[22px] text-center text-secondary">About</a>
                         </li>
                         <li class=""><a href="#"
-                                class="hover:text-primary transition duration-300 ease-in-out  font-custom font-medium text-[18px] leading-[22px] text-center text-gray-900">Service</a>
+                                class="hover:text-primary transition duration-300 ease-in-out  font-custom font-medium text-[18px] leading-[22px] text-center text-secondary">Service</a>
                         </li>
                         <li class=""><a href="#"
-                                class="hover:text-primary transition duration-300 ease-in-out  font-custom font-medium text-[18px] leading-[22px] text-center text-gray-900">Case
+                                class="hover:text-primary transition duration-300 ease-in-out  font-custom font-medium text-[18px] leading-[22px] text-center text-secondary">Case
                                 Study</a></li>
                         <li class=""><a href="#"
-                                class=" hover:text-primary transition duration-300 ease-in-out  font-custom font-medium text-[18px] leading-[22px] text-center text-gray-900">Blog</a>
+                                class=" hover:text-primary transition duration-300 ease-in-out  font-custom font-medium text-[18px] leading-[22px] text-center text-secondary">Blog</a>
                         </li>
                     </ul>
+
+                    
                     <button class="primary px-[30px] pt-[18px] pb-[15px]">
                         Contact Us
                         <span>
@@ -66,7 +69,7 @@
 
         </header>
 
-        <section>
+        <section class="mt-[85px] ">
 
             <div class="flex items-center justify-between container ">
 
@@ -81,9 +84,9 @@
                     <p class="text-gray text-lg font-medium pb-[55px]">We’re a Digital Marketing Agency in Bangladesh,
                         made up of a group of passionate individuals.</p>
 
-                    <label class="flex flex-col relative ">
+                    <label class="flex flex-col relative w-[563px]">
 
-                        <div class="flex flex-row">
+                        <div class="flex flex-row gap-3">
                             <span class="absolute left-[30px] top-[26px]">
                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -96,12 +99,12 @@
                                     </svg>
                             </span>
 
-                                    <input class="formInput pt-[26px] pb-[23px] pl-[65px]  focus:outline-none focus:ring focus:border-primary transition duration-300 ease-in-out pr-[180px]" type="email" name="search"
+                                    <input class="formInput pt-[26px] pb-[23px] pl-[65px] pr-[160px] focus:outline-none focus:ring focus:border-primary transition duration-300 ease-in-out " type="email" name="search"
                                     placeholder="Enter your mail address">
                         </div>
 
-                        <div class=" py-2 px-2 rounded shadow-sm bg-[indigo-800] flex absolute right-2">
-                            <button class="primary  px-[30px] pt-[18px] pb-[15px]">
+                        <div class=" py-2 px-2 rounded shadow-sm flex absolute right-2">
+                            <button class="primary px-[30px] pt-[18px] pb-[15px]">
                                 Get Started
                                 <span><svg width="8" height="14" viewBox="0 0 8 14" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -115,7 +118,7 @@
                     </label>
 
                 </div>
-                <div class="w-[856px]">
+                <div class="w-1/2">
                     <img src="public/img/elegant-businessman-office 1.png" alt="" class="">
                 </div>
             </div>
@@ -167,42 +170,55 @@
                 <h2 class="text-[40px] font-semibold  pt-2 pb-6">Brainstorming Sessions Churning Out New Ideas</h2>
                 <p class="text-lg text-[#8492A7] font-medium ">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Suspendisse varius enim in eros elementum tristique.</p>
+                
                 <div class="mt-[50px] bg-[#EBF6FF] rounded w-[284px] h-[60px] p-2 flex gap-7 mb-7">
-                    <button class="primary">Our Mission</button>
-                    <button>Our Mission</button>
+                    <button class="primary" onclick="openTabs('step-1')">Our Mission</button>
+                    <button onclick="openTabs('step-2')">Our Vision</button>
                 </div>
-                <p class="text-lg text-[#8492A7] font-medium pb-6">Lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit. Imperdiet velit amet at suscipit accumsan orci. Luctus dolor vestibulum id duis dolor luctus
-                    dui ac pretium. Sed donec posuere porta tortor posuere enim ut.</p>
-                <div class="flex flex-wrap gap-3 items-center">
 
-                    <div class="flex gap-3 items-center">
-                        <span>
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="12" cy="12" r="11" stroke="#008AFF" stroke-width="2" />
-                                <path d="M15.5 10L10.3437 15L8 12.7273" stroke="#008AFF" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-
-                        </span>
-                        <p>Pixel perfect & expertly crafted to meet standards</p>
+                <div class="w-full">
+         
+                    <div id="step-1" class=" step-tab">
+                        <p class="text-lg text-[#8492A7] font-medium pb-6 text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Imperdiet velit amet at suscipit accumsan orci. Luctus dolor vestibulum id duis dolor luctus
+                            dui ac pretium. Sed donec posuere porta tortor posuere enim ut.</p>
                     </div>
+           
+                    <div id="step-2" class="col-span-2 step-tab" style="display:none">
+                        <div class="flex flex-wrap gap-3 items-center">
 
-
-                    <div class="flex gap-3 items-center">
-                        <span>
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="12" cy="12" r="11" stroke="#008AFF" stroke-width="2" />
-                                <path d="M15.5 10L10.3437 15L8 12.7273" stroke="#008AFF" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-
-                        </span>
-                        <p>We love what we do & who we do it for</p>
+                            <div class="flex gap-3 items-center">
+                                <span>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="12" cy="12" r="11" stroke="#008AFF" stroke-width="2" />
+                                        <path d="M15.5 10L10.3437 15L8 12.7273" stroke="#008AFF" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+        
+                                </span>
+                                <p>Pixel perfect & expertly crafted to meet standards</p>
+                            </div>
+        
+        
+                            <div class="flex gap-3 items-center">
+                                <span>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="12" cy="12" r="11" stroke="#008AFF" stroke-width="2" />
+                                        <path d="M15.5 10L10.3437 15L8 12.7273" stroke="#008AFF" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+        
+                                </span>
+                                <p>We love what we do & who we do it for</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
+           
+               </div>
+
+                
             </div>
 
         </div>
@@ -352,35 +368,77 @@
 
 
     <!-- skill area start -->
-    <div class="flex items-center justify-between">
-        <div class="w-1/2">
-            <img class="w-[960px]"
-                src="public/img/charming-blonde-employee-having-fun-with-colleagues-posing-photo-light-room-team-it-specialists-ended-big-hard-business-project-shaking-hands 1.png"
-                alt="">
-        </div>
-        <div class="w-1/2 py-[140px] pl-[100px]">
-            <h4>Our Skill</h4>
-            <h2>We Aim to Share Knowledge,
-                Attract Talent & Startups</h2>
-            <p>We design & build brand, campaigns & digital projects for business large & small with customer
-                experiences.</p>
-
-            <div class="w-1/2">
-                <div class="flex item-center justify-between mb-4">
-                    <p>Business Consulting</p>
-                    <p>74%</p>
+    <section class="">
+        <div class="flex justify-between">
+            <div class="w-[960px]">
+                <img class="w-[960px]"
+                    src="public/img/charming-blonde-employee-having-fun-with-colleagues-posing-photo-light-room-team-it-specialists-ended-big-hard-business-project-shaking-hands 1.png"
+                    alt="">
+            </div>
+            <div class="w-[960px]  pl-[100px] bg-[#F7F9FC]">
+                <div class="w-[560px] py-[140px]">
+                    <h4 class="text-primary text-lg font-semibold pb-[10px]">Our Skill</h4>
+                <h2 class="text-secondary text-[40px] leading-[54px] font-semibold pb-[10px]">
+                    We Aim to Share Knowledge,
+                    Attract Talent & Startups</h2>
+                <p class="text-gray text-lg font-medium  pb-[50px]">We design & build brand, campaigns & digital projects for business large & small with customer
+                    experiences.</p>
+    
+                <div class="">
+                    <div class="flex item-center justify-between mb-4">
+                        <p class="text-secondary text-lg font-semibold">Business Consulting</p>
+                        <p class="text-secondary text-lg font-semibold">74%</p>
+                    </div>
+                    <div class="bg-indigo-600">
+                        
+                        <div class="w-[560px] bg-[#DEE7EE] rounded-full h-2 ">
+                            <div class="bg-primary h-2 rounded-full" style="width: 74%"></div>
+                        </div>
+      
+                    </div>
                 </div>
-                <div class="bg-indigo-600 w-1/2">
-                    <hr>
+    
+                <div class="mt-[36px]">
+                    <div class="flex item-center justify-between mb-4">
+                        <p class="text-secondary text-lg font-semibold">Business Startup</p>
+                        <p class="text-secondary text-lg font-semibold">86%</p>
+                    </div>
+                    <div class="bg-indigo-600">
+                        
+                        <div class="w-[560px] bg-[#DEE7EE] rounded-full h-2 ">
+                            <div class="bg-primary h-2 rounded-full" style="width: 86%"></div>
+                        </div>
+      
+                    </div>
+                </div>
+    
+                <div class="mt-[36px]">
+                    <div class="flex item-center justify-between mb-4">
+                        <p class="text-secondary text-lg font-semibold">Marketing Analysisg</p>
+                        <p class="text-secondary text-lg font-semibold">48%</p>
+                    </div>
+                    <div class="bg-indigo-600">
+                        
+                        <div class="w-[560px] bg-[#DEE7EE] rounded-full h-2 ">
+                            <div class="bg-primary h-2 rounded-full " style="width: 48%"></div>
+                        </div>
+      
+                    </div>
+    
+    
+                </div>
+    
+                
+    
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     <!-- skill area end -->
 
     <!-- service area Start -->
     <section class="section-title">
-        <div class="container">
+        <div class="container text-center lg:text-left">
             <h4 class="text-primary font-semibold text-base">How Can We Help?</h4>
             <div class="flex item-center justify-between">
                 <div class="w-[645px]">
@@ -393,9 +451,8 @@
                 </div>
             </div>
 
-            <div class="flex items-center justify-between gap-[30px]">
-                <div
-                    class="w-[308px] shadow-xl p-[50px] mt-[103px] rounded border-b-2 border-white hover:border-primary transition duration-300 ease-in-out cursor-pointer overflow-hidden">
+            <div class="grid lg:grid-cols-4 grid-cols-1 items-center justify-between gap-[30px]">
+                <div class="w-[308px] shadow-xl p-[50px] lg:mt-[103px] rounded border-b-2 border-white hover:border-primary transition duration-300 ease-in-out cursor-pointer overflow-hidden">
                     <span>
                         <img src="./public/img/svg/icon1.png" alt="">
                     </span>
@@ -417,7 +474,7 @@
                     </a>
                 </div>
                 <div
-                    class="w-[308px] shadow-xl p-[50px] -mt-[40px] rounded border-b-2 border-white hover:border-primary transition duration-300 ease-in-out cursor-pointer overflow-hidden">
+                    class="w-[308px] shadow-xl p-[50px] lg:-mt-[40px] rounded border-b-2 border-white hover:border-primary transition duration-300 ease-in-out cursor-pointer overflow-hidden">
                     <span>
                         <img src="./public/img/svg/icon2.png" alt="">
                     </span>
@@ -439,7 +496,7 @@
                     </a>
                 </div>
                 <div
-                    class="w-[308px] shadow-xl p-[50px] mt-[103px] rounded border-b-2 border-white hover:border-primary transition duration-300 ease-in-out cursor-pointer overflow-hidden">
+                    class="w-[308px] shadow-xl p-[50px] lg:mt-[103px] rounded border-b-2 border-white hover:border-primary transition duration-300 ease-in-out cursor-pointer overflow-hidden">
                     <span>
                         <img src="./public/img/svg/icon3.png" alt="">
                     </span>
@@ -461,7 +518,7 @@
                     </a>
                 </div>
                 <div
-                    class="w-[308px] shadow-xl p-[50px] -mt-[40px] rounded border-b-2 border-white hover:border-primary transition duration-300 ease-in-out cursor-pointer overflow-hidden">
+                    class="w-[308px] shadow-xl p-[50px] lg:-mt-[40px] rounded border-b-2 border-white hover:border-primary transition duration-300 ease-in-out cursor-pointer overflow-hidden">
                     <span>
                         <img src="./public/img/svg/icon4.png" alt="">
                     </span>
@@ -512,7 +569,7 @@
     <!-- call to Action End -->
 
     <!-- recent work start -->
-    <section class="section-title ">
+    <section class="section-title">
         <div class="container">
             <div class="pb-[80px] text-center">
                 <h4 class="text-primary text-lg font-semibold pb-2">Portfolio Works</h4>
@@ -522,12 +579,19 @@
                 <div class="flex item-center gap-8">
 
                     <p>Filter by:</p>
-                    <ul class="flex gap-8">
-                        <li><a href="#">All</a></li>
-                        <li><a href="#">Development</a></li>
-                        <li><a href="#">Design</a></li>
-                        <li><a href="#">Branding</a></li>
-                    </ul>
+                    <!-- <ul class="flex gap-8">
+                        <li><a href="#" data-filter="*">All</a></li>
+                        <li><a href="#" data-filter=".dev">Development</a></li>
+                        <li><a href="#" data-filter=".design">Design</a></li>
+                        <li><a href="#" data-filter=".brand">Branding</a></li>
+                    </ul> -->
+                    <div class="portfolio-filter mb-5 flex gap-8 ">
+                        <button class="active" data-filter="*">All</button>
+                        <button  data-filter=".dev">Development</button>
+                        <button  data-filter=".design">Design</button>
+                        <button  data-filter=".brand">Branding</button>
+                       
+                    </div>
 
                 </div>
                 <div>
@@ -535,10 +599,10 @@
                 </div>
             </div>
 
-            <div class="flex flex-wrap justify-between gap-[70px]">
+            <div class="portfolio ">
 
                 <!-- item -->
-                <div>
+                <div class="portfolio-grid dev mb-[70px]">
                     <div class="rounded w-[625px]">
                         <img src="public/img/img1.png" alt="">
                     </div>
@@ -549,7 +613,7 @@
                 </div>
                 <!-- item -->
                 <!-- item -->
-                <div>
+                <div class="portfolio-grid design mb-[70px]">
                     <div class="rounded w-[625px]">
                         <img src="public/img/img2.png" alt="">
                     </div>
@@ -560,7 +624,7 @@
                 </div>
                 <!-- item -->
                 <!-- item -->
-                <div>
+                <div class="portfolio-grid brand mb-[70px]">
                     <div class="rounded w-[625px]">
                         <img src="public/img/img3.png" alt="">
                     </div>
@@ -571,7 +635,7 @@
                 </div>
                 <!-- item -->
                 <!-- item -->
-                <div>
+                <div class="portfolio-grid dev mb-[70px]">
                     <div class="rounded w-[625px]">
                         <img src="public/img/img4.png" alt="">
                     </div>
@@ -587,14 +651,14 @@
     <!-- recent work end -->
 
     <!-- company start -->
-    <section class="bg-[#F7F9FC] section-title">
+    <section class="bg-[#F7F9FC] section-title t">
         <div class="container">
             <div class="text-center">
                 <h4 class="pb-[10px] text-[#008AFF]">Our core values & principles</h4>
                 <h2 class="pb-[70px] text-[40px] font-custom font-semibold text-[#222D39]">What Makes Us Unique From
                     Others</h2>
             </div>
-            <div class="grid grid-cols-3 justify-between gap-8">
+            <div class="grid md:grid-cols-3 grid-cols-1 justify-center lg:justify-between gap-8">
 
                 <div class="w-[420px] bg-white p-12 rounded">
                     <span>
@@ -769,38 +833,60 @@
                         See What Others Have
                         to Say About Us</h4>
                 </div>
-                <div class="flex item-center justify-between gap-3">
-                    <button class="primary"> Next</button>
-                    <button class="primary"> Prev</button>
+
+                <div class="">
+                    <button class="swiper-prev w-[50px] h-[50px] inline-flex items-center justify-center  bg-[#EBF6FF] hover:bg-primary hover:text-white rounded-[3px] transition duration-300 ease-in-out">
+                         <svg class="arraw" width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16 6.5H1" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M6.43066 1L0.99963 6.5L6.43066 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        </button>
+                    <button class=" swiper-next w-[50px] h-[50px] inline-flex items-center justify-center bg-[#EBF6FF]  hover:bg-primary hover:text-white rounded-[3px] transition duration-300 ease-in-out">
+                        <svg width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 6.5H16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M10.5693 1L16.0004 6.5L10.5693 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            
+                            
+                    </button>
                 </div>
+                
             </div>
 
-            <div class="flex item-center justify-between gap-6">
-                <div class=" mt-[30px] w-[420px]">
-                    <div calss="rounded bg-green-600 p-10">
-                        <span class="">
-                            <svg width="43" height="30" viewBox="0 0 43 30" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M42.0029 12H33.0029L39.003 1.90735e-06H30.003L24.0029 12V30H42.0029V12Z"
-                                    fill="#DEE7EE" />
-                                <path d="M18 30V12H9L15 1.90735e-06H6.00004L-3.8147e-06 12V30H18Z" fill="#DEE7EE" />
+
+           <!-- Swiper -->
+
+
+           <div class="swiper mySwiper mt-[50px]">
+    
+            <div class="swiper-wrapper">
+                
+              <div class="swiper-slide">
+                <div class="">
+                    <div class="h-[266px] relative z-[11]">
+                        
+                        <div class="absolute">
+                            <span class="absolute left-10 top-10">
+                                <svg width="43" height="30" viewBox="0 0 43 30" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M42.0029 12H33.0029L39.003 1.90735e-06H30.003L24.0029 12V30H42.0029V12Z"
+                                        fill="#DEE7EE" />
+                                    <path d="M18 30V12H9L15 1.90735e-06H6.00004L-3.8147e-06 12V30H18Z" fill="#DEE7EE" />
+                                </svg>
+                            </span>
+                            <p class="text-justify px-10 pt-[95px] ">
+                                Lorem Ipsum is a simply dummy text of an the printing and type settings for has been the industry's standard dumy text the ever since unknown printer.
+                            </p>
+                        </div>
+
+                        <span class="absolute text-[#F7F9FC] z-[-5]">
+                            <svg width="420" height="266" viewBox="0 0 420 266" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M3 0C1.34315 0 0 1.34314 0 3V243.774C0 245.431 1.34314 246.774 2.99999 246.774H58.0969L70.9391 265.565C71.3331 266.141 72.1816 266.147 72.583 265.575L85.7893 246.774H417C418.657 246.774 420 245.431 420 243.774V3C420 1.34315 418.657 0 417 0H3Z" fill="currentColor"></path>
                             </svg>
-
-                        </span>
-                        <p class="pt-[25px] text-justify text-base text-gray">Lorem ipsum dolor sit amet consectetur
-                            adipisicing elit. Aperiam pariatur et odit delectus
-                            numquam, dolor molestias ratione quidem autem excepturi corporis fugit aut iusto laborum!
-                            Fugiat
-                            ratione maiores iste incidunt, quam modi velit nobis molestiae tenetur ad, nostrum
-                            dignissimos
-                            error.</p>
-
-                        <span>
-                            ddd
-                        </span>
+                        </span>    
                     </div>
-
-                    <div class="flex item-center gap-5 mt-10">
+        
+                    <div class="flex item-center gap-5 mt-5 ml-[42px]">
                         <div>
                             <img src="public/img/img-profile.png" alt="">
                         </div>
@@ -811,88 +897,159 @@
                         </div>
                     </div>
                 </div>
+              </div>
 
-                <div class=" mt-[30px] w-[420px]">
-                    <div calss="rounded bg-green-600 p-10">
-                        <span class="">
-                            <svg width="43" height="30" viewBox="0 0 43 30" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M42.0029 12H33.0029L39.003 1.90735e-06H30.003L24.0029 12V30H42.0029V12Z"
-                                    fill="#DEE7EE" />
-                                <path d="M18 30V12H9L15 1.90735e-06H6.00004L-3.8147e-06 12V30H18Z" fill="#DEE7EE" />
+             <div class="swiper-slide">
+                <div class="">
+                    <div class="h-[266px] relative z-[11]">
+                        <div class="absolute">
+                            <span class="absolute left-10 top-10">
+                                <svg width="43" height="30" viewBox="0 0 43 30" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M42.0029 12H33.0029L39.003 1.90735e-06H30.003L24.0029 12V30H42.0029V12Z"
+                                        fill="#DEE7EE" />
+                                    <path d="M18 30V12H9L15 1.90735e-06H6.00004L-3.8147e-06 12V30H18Z" fill="#DEE7EE" />
+                                </svg>
+                            </span>
+                            <p class="text-justify px-10 pt-[95px] ">
+                                Lorem Ipsum is a simply dummy text of an the printing and type settings for has been the industry's standard dumy text the ever since unknown printer.
+                            </p>
+                        </div>
+                        <span class="absolute text-[#F7F9FC] z-[-5]">
+                            <svg width="420" height="266" viewBox="0 0 420 266" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M3 0C1.34315 0 0 1.34314 0 3V243.774C0 245.431 1.34314 246.774 2.99999 246.774H58.0969L70.9391 265.565C71.3331 266.141 72.1816 266.147 72.583 265.575L85.7893 246.774H417C418.657 246.774 420 245.431 420 243.774V3C420 1.34315 418.657 0 417 0H3Z" fill="currentColor"></path>
                             </svg>
-
-                        </span>
-                        <p class="pt-[25px] text-justify text-base text-gray">Lorem ipsum dolor sit amet consectetur
-                            adipisicing elit. Aperiam pariatur et odit delectus
-                            numquam, dolor molestias ratione quidem autem excepturi corporis fugit aut iusto laborum!
-                            Fugiat
-                            ratione maiores iste incidunt, quam modi velit nobis molestiae tenetur ad, nostrum
-                            dignissimos
-                            error.</p>
-
-                        <span>
-                            ddd
-                        </span>
+                        </span>    
                     </div>
-
-                    <div class="flex item-center gap-5 mt-10">
+        
+                    <div class="flex item-center gap-5 mt-5 ml-[42px]">
                         <div>
-                            <img src="public/img/img-profile.png" alt="">
+                            <img src="public/img/img-profile1.png" alt="">
                         </div>
                         <div>
                             <h4 class="font-custom text-lg
-                            font-semibold">Jhon Smith</h4>
-                            <p class="text-[#008AFF] font-custom text-[18px] leading-6 font-medium">Web Developer</p>
+                            font-semibold">Md Shamim Hossainh</h4>
+                            <p class="text-[#008AFF] font-custom text-[18px] leading-6 font-medium">UI/UX Designer</p>
                         </div>
                     </div>
                 </div>
+              </div>
 
-                <div class=" mt-[30px] w-[420px]">
-                    <div calss="rounded bg-green-600 p-10">
-                        <span class="">
-                            <svg width="43" height="30" viewBox="0 0 43 30" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M42.0029 12H33.0029L39.003 1.90735e-06H30.003L24.0029 12V30H42.0029V12Z"
-                                    fill="#DEE7EE" />
-                                <path d="M18 30V12H9L15 1.90735e-06H6.00004L-3.8147e-06 12V30H18Z" fill="#DEE7EE" />
+              <div class="swiper-slide">
+                <div class="">
+                    <div class="h-[266px] relative z-[11]">
+                        <div class="absolute">
+                            <span class="absolute left-10 top-10">
+                                <svg width="43" height="30" viewBox="0 0 43 30" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M42.0029 12H33.0029L39.003 1.90735e-06H30.003L24.0029 12V30H42.0029V12Z"
+                                        fill="#DEE7EE" />
+                                    <path d="M18 30V12H9L15 1.90735e-06H6.00004L-3.8147e-06 12V30H18Z" fill="#DEE7EE" />
+                                </svg>
+                            </span>
+                            <p class="text-justify px-10 pt-[95px] ">
+                                Lorem Ipsum is a simply dummy text of an the printing and type settings for has been the industry's standard dumy text the ever since unknown printer.
+                            </p>
+                        </div>
+                        <span class="absolute text-[#F7F9FC] z-[-5]">
+                            <svg width="420" height="266" viewBox="0 0 420 266" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M3 0C1.34315 0 0 1.34314 0 3V243.774C0 245.431 1.34314 246.774 2.99999 246.774H58.0969L70.9391 265.565C71.3331 266.141 72.1816 266.147 72.583 265.575L85.7893 246.774H417C418.657 246.774 420 245.431 420 243.774V3C420 1.34315 418.657 0 417 0H3Z" fill="currentColor"></path>
                             </svg>
-
-                        </span>
-                        <p class="pt-[25px] text-justify text-base text-gray">Lorem ipsum dolor sit amet consectetur
-                            adipisicing elit. Aperiam pariatur et odit delectus
-                            numquam, dolor molestias ratione quidem autem excepturi corporis fugit aut iusto laborum!
-                            Fugiat
-                            ratione maiores iste incidunt, quam modi velit nobis molestiae tenetur ad, nostrum
-                            dignissimos
-                            error.</p>
-
-                        <span>
-                            ddd
-                        </span>
+                        </span>    
                     </div>
-
-                    <div class="flex item-center gap-5 mt-10">
+        
+                    <div class="flex item-center gap-5 mt-5 ml-[42px]">
                         <div>
-                            <img src="public/img/img-profile.png" alt="">
+                            <img src="public/img/img-profile2.png" alt="">
                         </div>
                         <div>
                             <h4 class="font-custom text-lg
-                            font-semibold">Jhon Smith</h4>
-                            <p class="text-[#008AFF] font-custom text-[18px] leading-6 font-medium">Web Developer</p>
+                            font-semibold">Jesica Lirona</h4>
+                            <p class="text-[#008AFF] font-custom text-[18px] leading-6 font-medium">Front End Developer</p>
                         </div>
                     </div>
                 </div>
+              </div> 
+              
+             
+              
             </div>
+            
+        
+          </div>
+ 
 
         </div>
     </section>
     <!-- testimonials area end -->
 
+         
+    <!-- faq section start -->
+    <section class="bg-[#F7F9FC] section-title">
+
+       <div class="container flex items-center justify-between">
+        <div class="w-[420px]">
+            <h4 class="text-primary text-lg leading-[22px] font-semibold pb-[10px]">Answer To</h4>
+            <h2 class="text-secondary text-[40px] leading-[54px] font-semibold pb-[25px]">Frequently Asked
+                Questions</h2>
+                <p class="text-gray text-lg font-medium pb-[40px]">There are many variation of passage of lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                <button class="primary">Contact Us
+                    <span><svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 13L7 7L1 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        </span>
+                </button>
+        </div>
+        <div class="w-[757px]">
+            <div class="accordion flex flex-col gap-[30px] items-center justify-center">
+                <!--  Panel 1  -->
+                <div class=" cursor-pointer bg-white">
+                    <input type="checkbox" name="panel" id="panel-1" class="hidden">
+                    <label for="panel-1" class="faq relative block bg-black text-secondary text-lg font-semibold p-4">Professional & Experienced Team Member</label>
+                    <div class="accordion__content overflow-hidden bg-grey-lighter">
+                    
+                      <p class="accordion__body p-4 text-gray text-lg font-medium text-justify space-x-3">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters opposed to using</p>
+                    </div>
+                  </div>
+                <!-- Panel 2 -->
+                <div class=" cursor-pointer bg-white">
+                  <input type="checkbox" name="panel" id="panel-2" class="hidden">
+                  <label for="panel-2" class="faq relative block bg-black text-secondary text-lg font-semibold p-4">Our Main Goal How To Success In IT Business</label>
+                  <div class="accordion__content overflow-hidden bg-grey-lighter">
+                  
+                    <p class="accordion__body p-4 text-gray text-lg font-medium text-justify space-x-3">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters opposed to using</p>
+                  </div>
+                </div>
+                <!--  Panel 3  -->
+                <div class=" bg-white">
+                  <input type="checkbox" name="panel" id="panel-3" class="hidden">
+                  <label for="panel-3" class="faq relative block text-secondary text-lg font-semibold p-4  ">Our Main Goal How To Success In IT Business</label>
+                  <div class="accordion__content overflow-hidden bg-grey-lighter">
+                    
+                    <p class="accordion__body p-4">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters opposed to using</p>
+                  </div>
+                </div>
+                <!--  Panel 4  -->
+                <div class=" bg-white">
+                  <input type="checkbox" name="panel" id="panel-4" class="hidden">
+                  <label for="panel-4" class="faq relative block text-secondary text-lg font-semibold p-4">Our Main Goal How To Success In IT Business</label>
+                  <div class="accordion__content overflow-hidden bg-grey-lighter">
+                    
+                    <p class="accordion__body p-4">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters opposed to using</p>
+                  </div>
+                </div>
+              </div>
+        </div>
+        
+       </div>
+
+    </section>
+    <!-- faq section end -->
+
     <!-- footer area start -->
     <footer class="bg-[#222D39]">
         <div class="container">
-            <div class="flex item-center gap-[160px] py-[140px]">
+            <div class="flex item-center justify-between gap-[120px] py-[140px]">
                 <div class="">
                     <img src="./public/img/Bestkit.png" alt="">
                     <p class="pt-6 text-gray text-base font-medium w-[307px] text-justify">Bring a best development experience to designers and developers by offer the tools needed for
@@ -909,17 +1066,17 @@
                     <h4 class="text-white text-lg font-semibold pb-7">About Company</h4>
                     <div class="flex justify-between gap-[50px]">
                         <ul>
-                            <li class="py-1"><a href="#" class="text-gray text-base font-medium">Services</a></li>
-                            <li class="py-1"><a href="#" class="text-gray text-base font-medium">Pricing</a></li>
-                            <li class="py-1"><a href="#" class="text-gray text-base font-medium">Contact</a></li>
-                            <li class="py-1"><a href="#" class="text-gray text-base font-medium">Careers</a></li>
+                            <li class="py-1"><a href="#" class="text-gray text-base font-medium transition-all duration-500 ease-in-out hover:text-primary">Services</a></li>
+                            <li class="py-1"><a href="#" class="text-gray text-base font-medium transition-all duration-500 ease-in-out hover:text-primary">Pricing</a></li>
+                            <li class="py-1"><a href="#" class="text-gray text-base font-medium transition-all duration-500 ease-in-out hover:text-primary">Contact</a></li>
+                            <li class="py-1"><a href="#" class="text-gray text-base font-medium transition-all duration-500 ease-in-out hover:text-primary">Careers</a></li>
                         </ul>
 
                         <ul>
-                            <li class="py-1"><a href="#" class="text-gray text-base font-medium">Works</a></li>
-                            <li class="py-1"><a href="#" class="text-gray text-base font-medium">Resources</a></li>
-                            <li class="py-1"><a href="#" class="text-gray text-base font-medium">News</a></li>
-                            <li class="py-1"><a href="#" class="text-gray text-base font-medium">Privacy Policy</a></li>
+                            <li class="py-1"><a href="#" class="text-gray text-base font-medium transition-all duration-500 ease-in-out hover:text-primary">Works</a></li>
+                            <li class="py-1"><a href="#" class="text-gray text-base font-medium transition-all duration-500 ease-in-out hover:text-primary">Resources</a></li>
+                            <li class="py-1"><a href="#" class="text-gray text-base font-medium transition-all duration-500 ease-in-out hover:text-primary">News</a></li>
+                            <li class="py-1"><a href="#" class="text-gray text-base font-medium transition-all duration-500 ease-in-out hover:text-primary">Privacy Policy</a></li>
                            
                         </ul>
                     </div>
@@ -1032,6 +1189,23 @@
     </footer>
     <!-- footer area end -->
 
+    <!-- custom js -->
+     <!-- from cdn -->
+
+     <!-- JS -->
+
+     
+    <script src="/public/js/jquery-3.6.3.min.js"></script>
+     <!-- Swiper JS -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script> -->
+
+<script src="./public/js/swiper-bundle.min.js"></script>
+
+    <script src="./public/js/isotope.pkgd.min.js"></script>
+    <script src="./public/js/custom.js"></script>
+    <!-- custom js -->
+
+   
 </body>
 
 </html>
