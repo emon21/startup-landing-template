@@ -39,22 +39,6 @@ function openTabs(tabsName) {
 
 //sticky menu
 
-// document.addEventListener("DOMContentLoaded", function () {
-//     window.addEventListener('scroll', function () {
-//         if (window.scrollY > 50) {
-//             document.getElementById('ftco-navbar').classList.add('fixed-top');
-//             // add padding top to show content behind navbar
-//             navbar_height = document.querySelector('.navbar').offsetHeight;
-//             document.body.style.paddingTop = navbar_height + 'px';
-//         } else {
-//             document.getElementById('ftco-navbar').classList.remove('fixed-top');
-//             // remove padding top from body
-//             document.body.style.paddingTop = '0';
-//         }
-//     });
-// });
-
-
 $(window).bind('scroll',function(e) {
     e.preventDefault()
       if ($(this).scrollTop() > 50) {
@@ -118,3 +102,27 @@ var swiper = new Swiper(".mySwiper", {
               preventClicks :true,
             },
   });
+
+  //counter
+
+  document.addEventListener("DOMContentLoaded", () => {
+    function counter(id, start, end, duration) {
+     let obj = document.getElementById(id),
+      current = start,
+      range = end - start,
+      increment = end > start ? 1 : -1,
+      step = Math.abs(Math.floor(duration / range)),
+      timer = setInterval(() => {
+       current += increment;
+       obj.textContent = current;
+       if (current == end) {
+        clearInterval(timer);
+       }
+      }, step);
+    }
+    counter("count1", 0, 834, 2000);
+    counter("count2", 100, 372, 2500);
+    counter("count3", 100, 14, 2500);
+    counter("count4", 0, 43, 3000);
+   });
+   
