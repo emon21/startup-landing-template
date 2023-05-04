@@ -99,7 +99,7 @@
                                     </svg>
                             </span>
 
-                                    <input class="formInput pt-[26px] pb-[23px] pl-[65px] pr-[160px] focus:outline-none focus:ring focus:border-primary transition duration-300 ease-in-out " type="email" name="search"
+                                    <input class="formInput pt-[26px] pb-[23px] pl-[65px] pr-[185px] focus:outline-none focus:ring focus:border-primary transition duration-300 ease-in-out " type="email" name="search"
                                     placeholder="Enter your mail address">
                         </div>
 
@@ -173,8 +173,14 @@
                 
                 <div class="mt-[50px] bg-[#EBF6FF] rounded w-[284px] h-[60px] p-2 flex gap-7 mb-7">
                     <button class="primary" onclick="openTabs('step-1')">Our Mission</button>
-                    <button onclick="openTabs('step-2')">Our Vision</button>
+                    <button  class="primary" onclick="openTabs('step-2')">Our Vision</button>
                 </div>
+                
+                <div class="flex">
+                    <button class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-l focus:outline-none transition-colors duration-300 ease-in-out active:bg-blue-500 active:text-white">Tab 1</button>
+                    <button class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-r focus:outline-none transition-colors duration-300 ease-in-out">Tab 2</button>
+                  </div>
+                  
 
                 <div class="w-full">
          
@@ -391,8 +397,9 @@
                     </div>
                     <div class="bg-indigo-600">
                         
-                        <div class="w-[560px] bg-[#DEE7EE] rounded-full h-2 ">
-                            <div class="bg-primary h-2 rounded-full" style="width: 74%"></div>
+                        <div class="w-[560px] bg-[#DEE7EE] h-1 relative z-10 ">
+                            <div class="bg-primary h-1 " style="width: 74%"></div>
+                            <div class=" bg-primary h-[25px] w-[3px] absolute left-[411px] top-[-9px] z-40 "></div>
                         </div>
       
                     </div>
@@ -405,8 +412,9 @@
                     </div>
                     <div class="bg-indigo-600">
                         
-                        <div class="w-[560px] bg-[#DEE7EE] rounded-full h-2 ">
-                            <div class="bg-primary h-2 rounded-full" style="width: 86%"></div>
+                        <div class="w-[560px] bg-[#DEE7EE] h-1 relative ">
+                            <div class="bg-primary h-1" style="width: 86%"></div>
+                            <div class=" bg-primary h-[25px] w-[3px] absolute left-[479px] top-[-9px] z-40 "></div>
                         </div>
       
                     </div>
@@ -417,12 +425,11 @@
                         <p class="text-secondary text-lg font-semibold">Marketing Analysisg</p>
                         <p class="text-secondary text-lg font-semibold">48%</p>
                     </div>
-                    <div class="bg-indigo-600">
-                        
-                        <div class="w-[560px] bg-[#DEE7EE] rounded-full h-2 ">
-                            <div class="bg-primary h-2 rounded-full " style="width: 48%"></div>
+                    <div class="">
+                        <div class="w-[560px] bg-[#DEE7EE] h-1 relative ">
+                            <div class="bg-primary h-1" style="width: 48%"></div>
+                            <div class=" bg-primary h-[25px] w-[3px] absolute left-[266px] top-[-9px] z-40 "></div>
                         </div>
-      
                     </div>
     
     
@@ -447,7 +454,14 @@
                         For Startups Business</h2>
                 </div>
                 <div>
-                    <button class="primary">View All Service</button>
+                    <button class="primary pt-[18px] pb-[15px] px-[30px] flex items-center gap-[15px]">View All Services
+                        <span>
+                            <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 13L7 7L1 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                
+                        </span>
+                    </button>
                 </div>
             </div>
 
@@ -577,7 +591,6 @@
             </div>
             <div class="flex item-center justify-between mb-12">
                 <div class="flex item-center gap-8">
-
                     <p>Filter by:</p>
                     <!-- <ul class="flex gap-8">
                         <li><a href="#" data-filter="*">All</a></li>
@@ -595,7 +608,14 @@
 
                 </div>
                 <div>
-                    <button class="primary">See More Work</button>
+                    <button class="primary pt-[18px] pb-[15px] px-[30px] flex items-center gap-[15px]">See More Work
+                        <span>
+                            <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 13L7 7L1 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                
+                        </span>
+                    </button>
                 </div>
             </div>
 
@@ -810,7 +830,7 @@
 
 
             </div>
-            <button class="primary flex justify-center mt-[50px] mx-auto">
+            <button class="primary pt-[18px] pb-[15px] px-[30px] flex justify-center mt-[50px] mx-auto">
                 Get In Touch
                 <span>
                     <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -993,7 +1013,7 @@
             <h2 class="text-secondary text-[40px] leading-[54px] font-semibold pb-[25px]">Frequently Asked
                 Questions</h2>
                 <p class="text-gray text-lg font-medium pb-[40px]">There are many variation of passage of lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
-                <button class="primary">Contact Us
+                <button class="primary pt-[18px] pb-[15px] px-[30px]">Contact Us
                     <span><svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M1 13L7 7L1 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
@@ -1065,14 +1085,12 @@
                 <div class="">
                     <h4 class="text-white text-lg font-semibold pb-7">About Company</h4>
                     <div class="flex justify-between gap-[50px]">
-                        <ul>
+                        <ul class="columns-2">
                             <li class="py-1"><a href="#" class="text-gray text-base font-medium transition-all duration-500 ease-in-out hover:text-primary">Services</a></li>
                             <li class="py-1"><a href="#" class="text-gray text-base font-medium transition-all duration-500 ease-in-out hover:text-primary">Pricing</a></li>
                             <li class="py-1"><a href="#" class="text-gray text-base font-medium transition-all duration-500 ease-in-out hover:text-primary">Contact</a></li>
                             <li class="py-1"><a href="#" class="text-gray text-base font-medium transition-all duration-500 ease-in-out hover:text-primary">Careers</a></li>
-                        </ul>
-
-                        <ul>
+                        
                             <li class="py-1"><a href="#" class="text-gray text-base font-medium transition-all duration-500 ease-in-out hover:text-primary">Works</a></li>
                             <li class="py-1"><a href="#" class="text-gray text-base font-medium transition-all duration-500 ease-in-out hover:text-primary">Resources</a></li>
                             <li class="py-1"><a href="#" class="text-gray text-base font-medium transition-all duration-500 ease-in-out hover:text-primary">News</a></li>

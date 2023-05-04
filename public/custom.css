@@ -44,6 +44,17 @@ padding: 140px 0 140px 0px;
     background-color: #DEE7EE;
 }
 
+
+.progressbar{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50px;
+    background-color: #DEE7EE;
+
+
+}
+
 .formInput{
 width: 563px;
 height: 71px;
@@ -99,16 +110,23 @@ color: #008AFF;
 
 
 .faq:after {
-    content: '+';
+    content: '';
     position: absolute;
     right: 1em;
     color: #141414;
+    background-image: url("data:image/svg+xml,%3Csvg width='14' height='14' viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M8 6V0H6V6H0V8H6V14H8V8H14V6H8Z' fill='%23222D39'/%3E%3C/svg%3E%0A");
   }
   
   input:checked + .faq:after {
-    content: '-';
+    content: '';
     line-height: .8em;
+    background-image: url("data:image/svg+xml,%3Csvg width='14' height='2' viewBox='0 0 14 2' fill='none' stoc xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0H14V2H0V0Z' fill='%23222D39'/%3E%3C/svg%3E ");
   }
+
+  /* <svg width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 0H14V2H0V0Z" fill="#222D39"/>
+</svg> */
+
   
   .accordion__content{
     max-height: 0em;
