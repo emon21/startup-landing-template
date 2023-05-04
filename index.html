@@ -16,17 +16,16 @@
 
     <link href="./public/output.css" rel="stylesheet">
     <!-- <script src="https://cdn.tailwindcss.com"></script> -->
-<!-- CSS -->
-<!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" /> -->
+
 <link rel="stylesheet" href="./public/swiper-bundle.min.css">
     <!-- custom css -->
     <link href="./public/custom.css" rel="stylesheet">
     <!-- custom css -->
 </head>
 
-<body class="font-custom">
+<body class="font-custom" data-spy="scroll" data-target=".topmenu" data-offset="50">
     <div class="bg-[#F0F9FE] ">
-        <header class="flex items-center justify-center  top-0  sticky  w-full z-50 ">
+        <header class="flex items-center justify-center  top-0 topmenu w-full z-[100] ">
             <div class="container">
                 <div class="flex justify-between items-center py-4">
                     <a href="#">
@@ -69,10 +68,9 @@
 
         </header>
 
-        <section class="mt-[85px] ">
+        <section class="mt-[85px] relative py-[200px]">
 
             <div class="flex items-center justify-between container ">
-
                 <div class="w-1/2">
                     <div class="flex gap-3 items-center pb-2">
                         <span class="border w-[100px] h-0 border-primary ml-[10px] mt-[5px]"></span>
@@ -87,7 +85,7 @@
                     <label class="flex flex-col relative w-[563px]">
 
                         <div class="flex flex-row gap-3">
-                            <span class="absolute left-[30px] top-[26px]">
+                            <span class="absolute left-[30px] top-1/2 -translate-y-1/2">
                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -99,11 +97,11 @@
                                     </svg>
                             </span>
 
-                                    <input class="formInput pt-[26px] pb-[23px] pl-[65px] pr-[185px] focus:outline-none focus:ring focus:border-primary transition duration-300 ease-in-out " type="email" name="search"
+                                    <input class="formInput pt-[26px] pb-[23px] pl-[65px] pr-[185px] focus:outline-none focus:ring-1 focus:border-primary transition duration-300 ease-in-out " type="email" name="search"
                                     placeholder="Enter your mail address">
                         </div>
 
-                        <div class=" py-2 px-2 rounded shadow-sm flex absolute right-2">
+                        <div class=" py-2 px-2 rounded shadow-sm flex absolute right-0">
                             <button class="primary px-[30px] pt-[18px] pb-[15px]">
                                 Get Started
                                 <span><svg width="8" height="14" viewBox="0 0 8 14" fill="none"
@@ -118,8 +116,9 @@
                     </label>
 
                 </div>
-                <div class="w-1/2">
-                    <img src="public/img/elegant-businessman-office 1.png" alt="" class="">
+                <div class="w-1/2 ">
+                    <img  src="public/img/elegant-businessman-office 1.png" alt="" class="z-50 absolute right-[255px] bottom-0">
+                    <img class="absolute right-[104px] top-3 z-10 w-[856px] h-[856px]" src="public/img/svg/hero-circle-bg.svg" alt="">
                 </div>
             </div>
 
@@ -157,7 +156,7 @@
                         alt="" />
 
                     <div class="bg-[#36CD77] rounded text-white px-5 py-[18px] absolute z-50 bottom-[50px]
-                        right-[40px] flex gap-3 items-center justify-between">
+                        right-[40px] flex gap-3 items-center justify-between z-10">
                         <p class="text-[40px] font-bold mb-0">25+</p>
                         <p class="text-base font-medium text-left mb-0">Years Of <br /> Experience</p>
                     </div>
@@ -400,22 +399,22 @@
 
 
     <!-- skill area start -->
-    <section class="">
-        <div class="flex justify-between">
-            <div class="w-[960px]">
-                <img class="w-[960px]"
+    <section class="bg-[#F7F9FC] relative">
+        <div class="container flex justify-between">
+            <div class="w-1/2">
+                <img class="w-[960px] h-full absolute left-0 top-0 bottom-0 object-cover"
                     src="public/img/charming-blonde-employee-having-fun-with-colleagues-posing-photo-light-room-team-it-specialists-ended-big-hard-business-project-shaking-hands 1.png"
                     alt="">
             </div>
-            <div class="w-[960px]  pl-[100px] bg-[#F7F9FC]">
-                <div class="w-[560px] py-[140px]">
+            <div class="w-1/2 pl-[100px]">
+                <div class="py-[140px]">
                     <h4 class="text-primary text-lg font-semibold pb-[10px]">Our Skill</h4>
                 <h2 class="text-secondary text-[40px] leading-[54px] font-semibold pb-[10px]">
                     We Aim to Share Knowledge,
                     Attract Talent & Startups</h2>
                 <p class="text-gray text-lg font-medium  pb-[50px]">We design & build brand, campaigns & digital projects for business large & small with customer
                     experiences.</p>
-    
+
                 <div class="">
                     <div class="flex item-center justify-between mb-4">
                         <p class="text-secondary text-lg font-semibold">Business Consulting</p>
@@ -615,16 +614,11 @@
                 <h4 class="text-primary text-lg font-semibold pb-2">Portfolio Works</h4>
                 <h2 class="text-[#222D39] text-[40px] font-semibold ">Some of My Latest Projects</h2>
             </div>
-            <div class="flex item-center justify-between mb-12">
-                <div class="flex item-center gap-8">
+            <div class="flex items-center justify-between mb-12">
+                <div class="flex items-center gap-8">
                     <p>Filter by:</p>
-                    <!-- <ul class="flex gap-8">
-                        <li><a href="#" data-filter="*">All</a></li>
-                        <li><a href="#" data-filter=".dev">Development</a></li>
-                        <li><a href="#" data-filter=".design">Design</a></li>
-                        <li><a href="#" data-filter=".brand">Branding</a></li>
-                    </ul> -->
-                    <div class="portfolio-filter mb-5 flex gap-8 ">
+                
+                    <div class="portfolio-filter flex gap-8 ">
                         <button class="active" data-filter="*">All</button>
                         <button  data-filter=".dev">Development</button>
                         <button  data-filter=".design">Design</button>
@@ -907,8 +901,6 @@
             <div class="swiper-wrapper">
                 
               <div class="swiper-slide">
-                <div class="">
-
                     <div class="h-[266px] relative z-[11]">
                         <div class="absolute">
                             <span class="absolute left-10 top-10">
@@ -929,7 +921,6 @@
                             </svg>
                         </span>    
                     </div>
-
                     <div class="flex item-center gap-5 mt-5 ml-[42px]">
                         <div>
                             <img src="public/img/img-profile.png" alt="">
@@ -940,7 +931,6 @@
                             <p class="text-[#008AFF] font-custom text-[18px] leading-6 font-medium">Web Developer</p>
                         </div>
                     </div>
-                </div>
               </div>
 
              <div class="swiper-slide">
@@ -1014,12 +1004,7 @@
                     </div>
                 </div>
               </div> 
-              
-             
-              
             </div>
-            
-        
           </div>
  
 

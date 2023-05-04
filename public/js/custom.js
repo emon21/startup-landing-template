@@ -37,6 +37,34 @@ function openTabs(tabsName) {
 });
 
 
+//sticky menu
+
+// document.addEventListener("DOMContentLoaded", function () {
+//     window.addEventListener('scroll', function () {
+//         if (window.scrollY > 50) {
+//             document.getElementById('ftco-navbar').classList.add('fixed-top');
+//             // add padding top to show content behind navbar
+//             navbar_height = document.querySelector('.navbar').offsetHeight;
+//             document.body.style.paddingTop = navbar_height + 'px';
+//         } else {
+//             document.getElementById('ftco-navbar').classList.remove('fixed-top');
+//             // remove padding top from body
+//             document.body.style.paddingTop = '0';
+//         }
+//     });
+// });
+
+
+$(window).bind('scroll',function(e) {
+    e.preventDefault()
+      if ($(this).scrollTop() > 50) {
+          $('.topmenu').addClass('fixed');
+      }else{
+          $('.topmenu').removeClass('fixed');
+      }   
+  });
+
+
   //isotope JS
  
 
