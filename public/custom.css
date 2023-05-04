@@ -44,6 +44,22 @@ padding: 140px 0 140px 0px;
     background-color: #DEE7EE;
 }
 
+.tab-primary {
+    background: #EBF6FF;
+    color: #222D39;
+    border-radius: 2px;
+    padding: 10px 16px 8px 16px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    width: 100%;
+}
+
+.tab-primary.active {
+    background: #0b8af1;
+    color: #fff;
+    transition: all ease-in-out .3s;
+  }
 
 .progressbar{
     content: '';

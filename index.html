@@ -172,25 +172,51 @@
                     Suspendisse varius enim in eros elementum tristique.</p>
                 
                 <div class="mt-[50px] bg-[#EBF6FF] rounded w-[284px] h-[60px] p-2 flex gap-7 mb-7">
-                    <button class="primary" onclick="openTabs('step-1')">Our Mission</button>
-                    <button  class="primary" onclick="openTabs('step-2')">Our Vision</button>
+                    <button id="btn" class="tab-primary active" onclick="openTabs('step-1')">Our Mission</button>
+                    <button id="btn"  class="tab-primary" onclick="openTabs('step-2')">Our Vision</button>
                 </div>
                 
-                <div class="flex">
-                    <button class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-l focus:outline-none transition-colors duration-300 ease-in-out active:bg-blue-500 active:text-white">Tab 1</button>
-                    <button class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-r focus:outline-none transition-colors duration-300 ease-in-out">Tab 2</button>
-                  </div>
-                  
-
                 <div class="w-full">
          
                     <div id="step-1" class=" step-tab">
                         <p class="text-lg text-[#8492A7] font-medium pb-6 text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing
                             elit. Imperdiet velit amet at suscipit accumsan orci. Luctus dolor vestibulum id duis dolor luctus
                             dui ac pretium. Sed donec posuere porta tortor posuere enim ut.</p>
+                            <div class="flex flex-wrap gap-3 items-center">
+
+                                <div class="flex gap-3 items-center">
+                                    <span>
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="12" cy="12" r="11" stroke="#008AFF" stroke-width="2" />
+                                            <path d="M15.5 10L10.3437 15L8 12.7273" stroke="#008AFF" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+            
+                                    </span>
+                                    <p>Pixel perfect & expertly crafted to meet standards</p>
+                                </div>
+            
+            
+                                <div class="flex gap-3 items-center">
+                                    <span>
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="12" cy="12" r="11" stroke="#008AFF" stroke-width="2" />
+                                            <path d="M15.5 10L10.3437 15L8 12.7273" stroke="#008AFF" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+            
+                                    </span>
+                                    <p>We love what we do & who we do it for</p>
+                                </div>
+                            </div>
                     </div>
            
-                    <div id="step-2" class="col-span-2 step-tab" style="display:none">
+                    <div id="step-2" class="col-span-2 step-tab transition-all duration-300 ease-in-out" style="display:none">
+                        <p class="text-lg text-[#8492A7] font-medium pb-6 text-justify">
+                            Imperdiet velit amet at suscipit accumsan orci. Luctus dolor vestibulum id duis dolor luctus
+                            dui ac pretium. Sed donec posuere porta tortor posuere enim ut.</p>
                         <div class="flex flex-wrap gap-3 items-center">
 
                             <div class="flex gap-3 items-center">
@@ -853,7 +879,6 @@
                         See What Others Have
                         to Say About Us</h4>
                 </div>
-
                 <div class="">
                     <button class="swiper-prev w-[50px] h-[50px] inline-flex items-center justify-center  bg-[#EBF6FF] hover:bg-primary hover:text-white rounded-[3px] transition duration-300 ease-in-out">
                          <svg class="arraw" width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -883,8 +908,8 @@
                 
               <div class="swiper-slide">
                 <div class="">
+
                     <div class="h-[266px] relative z-[11]">
-                        
                         <div class="absolute">
                             <span class="absolute left-10 top-10">
                                 <svg width="43" height="30" viewBox="0 0 43 30" fill="none"
@@ -894,18 +919,17 @@
                                     <path d="M18 30V12H9L15 1.90735e-06H6.00004L-3.8147e-06 12V30H18Z" fill="#DEE7EE" />
                                 </svg>
                             </span>
-                            <p class="text-justify px-10 pt-[95px] ">
+                            <p class="text-justify px-10 pt-[95px] w-[340px]">
                                 Lorem Ipsum is a simply dummy text of an the printing and type settings for has been the industry's standard dumy text the ever since unknown printer.
                             </p>
                         </div>
-
                         <span class="absolute text-[#F7F9FC] z-[-5]">
                             <svg width="420" height="266" viewBox="0 0 420 266" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M3 0C1.34315 0 0 1.34314 0 3V243.774C0 245.431 1.34314 246.774 2.99999 246.774H58.0969L70.9391 265.565C71.3331 266.141 72.1816 266.147 72.583 265.575L85.7893 246.774H417C418.657 246.774 420 245.431 420 243.774V3C420 1.34315 418.657 0 417 0H3Z" fill="currentColor"></path>
                             </svg>
                         </span>    
                     </div>
-        
+
                     <div class="flex item-center gap-5 mt-5 ml-[42px]">
                         <div>
                             <img src="public/img/img-profile.png" alt="">

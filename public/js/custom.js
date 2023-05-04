@@ -1,11 +1,40 @@
+
+
+//tab 
+
 function openTabs(tabsName) {
     var i;
     var x = document.getElementsByClassName("step-tab");
+
+    // $('.tab-primary').on('click', function(){
+    //     $('.tab-primary').removeClass('active');
+    //     $(this).addClass('active');
+    // });
+    // const myButton = document.getElementById('myButton');
     for (i = 0; i < x.length; i++) {
       x[i].style.display = "none";
     }
+
+    // myButton.addEventListener('click', function() {
+    //     myButton.classList.add('bg-primary', 'active:bg-primary');
+    //   });
+
+   
+
     document.getElementById(tabsName).style.display = "block";
+
+    // $('.step-tab').removeClass('primary');
+    // $(this).addClass('primary');
+    
   }
+
+//btn tab  active
+ $(document).ready(function(){
+    $('.tab-primary').on('click', function(){
+        $('.tab-primary').removeClass('active');
+        $(this).addClass('active');
+    })
+});
 
 
   //isotope JS
