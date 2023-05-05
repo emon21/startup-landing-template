@@ -1,11 +1,11 @@
 
 
-This project is a html version [comforty-ecommerce-html-template](https://github.com/echotemplate/comforty-ecommerce-html-template) designed with HTML & CSS. We use tailwindcss framework and some javascripts plugin. For slider we use swipper js.
+This project is a html version [startup-landing-template](https://startup-html-template.netlify.app/) designed with HTML & CSS. We use tailwindcss framework and some javascripts plugin. For slider we use swipper js.
 
-Check the [Live Demo here](https://demo.echotemplate.com/comforty-ecommerce-html-template/).
+Check the [Live Demo here](https://startup-html-template.netlify.app).
 
 ![](screenshot.png)
-<img src="screenshot.png">
+<img src="Screenshot.png">
 
 ## Project Setup
 
