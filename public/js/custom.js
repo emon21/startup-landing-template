@@ -125,4 +125,6 @@ var swiper = new Swiper(".mySwiper", {
     counter("count3", 100, 14, 2500);
     counter("count4", 0, 43, 3000);
    });
+
+ 
    

@@ -6,9 +6,7 @@
 .text-primary{
   color: #008AFF;
 }
-.demo{
-    position: relative;
-}
+
 
 .fixed {
     background-color: #c3e1f1;
@@ -16,11 +14,15 @@
     transition:all  .5s ease-in-out;
 }
 
-.demo:not(:last-child)::after{
+.counter{
+    position: relative;
+}
+
+.counter:not(:last-child)::after{
     content: '';
     position: absolute;
     width: 1px;
-    height: 50px;
+    height: 59px;
     top:50% ;
     right: 0;
     transform: translateY(-50%);
